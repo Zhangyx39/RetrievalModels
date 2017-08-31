@@ -33,7 +33,7 @@ Implement document ranking by retrieving information such as `TF` and `DF` from 
 
 ### License
 
-This projext is under the [MIT license](LICENSE).
+This project is under the [MIT license](LICENSE).
 
 ```
 Copyright (c) 2017 Yixing Zhang
