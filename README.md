@@ -2,7 +2,7 @@
 Implemented five retrieval models using elasticsearch and compared their performances.
 
 ### Dataset
-This project use trec_ap89 corpus that can be found from [TREC](http://trec.nist.gov/data.html).
+This project uses trec_ap89 corpus that can be found from [TREC](http://trec.nist.gov/data.html).
 
 ### Document Indexing
   * Use **Jsoup** to read the HTML like formated files from the dataset.
