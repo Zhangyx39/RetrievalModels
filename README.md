@@ -15,8 +15,8 @@ Implement document ranking by retrieving information such as `TF` and `DF` from 
   * Language models: `Okapi BM25`, Unigram LM with `Laplace` smoothing and Unigram LM with `Jelinek-Mercer` smoothing.
   
 ### Results
-  * For each query, generate top 1000 documents by the ranking models and same them as result files.
-  * Run evaluation in command line for each result file and get the following results.
+  * For each [query](query/query_origin.txt), generate top 1000 documents by the ranking models and same them as [result files](result_stemmed).
+  * Run evaluation in command line for each result file using [trec_eval](trec_eval.txt) and [qrel_file](qrels.adhoc.51-100.AP89.txt) to get the following results.
   ```
   trec_eval [-q] qrel_file results_file
   ```
@@ -29,3 +29,30 @@ Implement document ranking by retrieving information such as `TF` and `DF` from 
 | Okapi BM25    | 0.2631          | 0.4160   | 0.3307   |
 | Laplace       | 0.1749          | 0.3560   | 0.2720   |
 | Jelinek-Mercer| 0.1984          | 0.3120   | 0.2627   |
+
+
+### License
+
+This projext is under the [MIT license](LICENSE).
+
+```
+Copyright (c) 2017 Yixing Zhang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
